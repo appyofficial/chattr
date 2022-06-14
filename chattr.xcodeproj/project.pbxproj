@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D113694F2857806F007CD73E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113694E2857806F007CD73E /* FeedView.swift */; };
+		D113695128578E00007CD73E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113695028578E00007CD73E /* PostCell.swift */; };
+		D11369532857C6F8007CD73E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11369522857C6F8007CD73E /* SearchView.swift */; };
+		D11369552857CD8A007CD73E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11369542857CD8A007CD73E /* SearchBar.swift */; };
 		D1DF5A7F284DFE8A002756EC /* chattrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF5A7E284DFE8A002756EC /* chattrApp.swift */; };
 		D1DF5A81284DFE8A002756EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF5A80284DFE8A002756EC /* ContentView.swift */; };
 		D1DF5A83284DFE8B002756EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DF5A82284DFE8B002756EC /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D113694E2857806F007CD73E /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		D113695028578E00007CD73E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D11369522857C6F8007CD73E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		D11369542857CD8A007CD73E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		D1DF5A7B284DFE8A002756EC /* chattr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chattr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DF5A7E284DFE8A002756EC /* chattrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chattrApp.swift; sourceTree = "<group>"; };
 		D1DF5A80284DFE8A002756EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D113694B28577FE7007CD73E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D113694C28577FEA007CD73E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1DF5A80284DFE8A002756EC /* ContentView.swift */,
+				D113694E2857806F007CD73E /* FeedView.swift */,
+				D113695028578E00007CD73E /* PostCell.swift */,
+				D11369522857C6F8007CD73E /* SearchView.swift */,
+				D11369542857CD8A007CD73E /* SearchBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D113694D28577FED007CD73E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D1DF5A72284DFE8A002756EC = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +85,10 @@
 		D1DF5A7D284DFE8A002756EC /* chattr */ = {
 			isa = PBXGroup;
 			children = (
+				D113694D28577FED007CD73E /* Model */,
+				D113694C28577FEA007CD73E /* View */,
+				D113694B28577FE7007CD73E /* ViewModels */,
 				D1DF5A7E284DFE8A002756EC /* chattrApp.swift */,
-				D1DF5A80284DFE8A002756EC /* ContentView.swift */,
 				D1DF5A82284DFE8B002756EC /* Assets.xcassets */,
 				D1DF5A84284DFE8B002756EC /* Preview Content */,
 			);
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11369532857C6F8007CD73E /* SearchView.swift in Sources */,
 				D1DF5A81284DFE8A002756EC /* ContentView.swift in Sources */,
+				D113694F2857806F007CD73E /* FeedView.swift in Sources */,
 				D1DF5A7F284DFE8A002756EC /* chattrApp.swift in Sources */,
+				D113695128578E00007CD73E /* PostCell.swift in Sources */,
+				D11369552857CD8A007CD73E /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

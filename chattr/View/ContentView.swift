@@ -13,13 +13,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView {
-                Text("Home")
+               FeedView()
                     .tabItem {
                         Image(systemName: "house")
                         Text("Home")
                     }
                 
-                Text("Search")
+                SearchView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Search")
@@ -30,6 +30,7 @@ struct ContentView: View {
                         Image(systemName: "message")
                         Text("Messages")
                     }
+                
             }
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.automatic)
