@@ -15,11 +15,12 @@ struct SearchView: View {
             SearchBar(text: $searchText)
                 .padding()
             
-            VStack {
+            VStack(spacing: 16) {
                 ForEach(0..<20) { _ in
-                    Text("Tweets will be here")
+                    UserCell()
                 }
             }
+            .padding()
         }
     }
 }
